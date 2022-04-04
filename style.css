@@ -1,0 +1,115 @@
+body, h1, h2, h3, h4, p, a {
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto';
+	font-style: normal;
+}
+
+body {	
+	background-color: #E5E5E5;
+}
+
+.header {
+	padding-top: 25px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.content {
+	font-size: 0;
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	margin: auto;
+	padding-top: 31px;
+	background-color: #FFFFFF;
+}
+
+.card {
+	position: relative;
+	width: 481px;
+	height: 392px;
+	background-color: #F7F5F9;
+	margin: auto;
+	padding: 40px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);  
+	border-radius: 12px;
+	mix-blend-mode: pass through;
+	align-items: center;
+  
+}
+
+.card-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;  
+	display: flex;
+	align-items: center;
+	color: #3B3D43;
+}
+
+.input {
+	width: 401px;
+	height: 48px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin-top: 25px;	
+	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+	border-radius: 6px;
+	border: 0;
+}
+
+.entry-field {	
+	background: #FFFFFF;		
+	font-size: 15px;
+	line-height: 20px;
+	padding-left: 15px;
+	color: #D0C9D6;
+}
+
+.entry-field:focus {	
+	outline: 2px solid #854FC8;
+}
+
+.entry-field:hover {	
+	outline: 1px solid #854FC8;
+}
+
+.submit {
+	background: #6979F8;	
+	font-size: 17px;
+	line-height: 22px;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: opacity 0.5s;
+}
+
+.submit:focus {	
+	outline: 0px;	
+}
+
+.submit:hover {		
+	background: #3c52f6;
+}
+
+::-webkit-input-placeholder {
+	color: #D0C9D6;
+}
+::-moz-placeholder {
+	color: #D0C9D6;
+}
+:-ms-input-placeholder {
+	color: #D0C9D6;
+}
+:-moz-placeholder {
+	color: #D0C9D6;
+}

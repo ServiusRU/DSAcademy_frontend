@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DS Academy - frontend</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="ajax.js"></script>
+	</head>
+  
+	<body class='body'>
+		<form method="POST" id="formForSend" action="javascript:void(null);" onsubmit="call()">
+			<header class='header'>			
+				<section class='content'>
+					<div class='card'>
+						<h3 class='card-title'>Задать вопрос</h3>
+						<input
+							class='input entry-field'
+							type="text"
+							name="name"
+							id="name"
+							placeholder="Фамилия Имя Отчество *"
+							pattern="^[А-Яа-яЁё\s\-]+$"
+							required>
+						<input
+							class='input entry-field'
+							type="tel"
+							name="phone"
+							id="phone"
+							placeholder="Телефон *"
+							pattern="^[0-9\s\-\+]+$"
+							required>
+						<input
+							class='input entry-field'
+							type="email"
+							name="email"
+							id="email"
+							placeholder="E-mail">
+						<button
+							class='input submit'
+							type="input"
+							name="sendButton"
+							id="submitId">ОТПРАВИТЬ ЗАПРОС</button>
+					</div>					
+				</section>	
+				<!--<div id="results">вывод</div>-->
+			</header>
+		</form>		
+	</body>
+</html>

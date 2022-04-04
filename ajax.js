@@ -7,7 +7,7 @@ function call() {
 		data: msg,
 		success: function(data) {
 			//$('#results').html(data);
-			alert('Данные отправлены.');
+			alert('Данные успешно отправлены.');
 		},
 		error:  function(xhr, str){			
 			var err = ('Ошибка '+ xhr.status +': ');

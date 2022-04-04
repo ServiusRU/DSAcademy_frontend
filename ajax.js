@@ -10,6 +10,7 @@ function call() {
 			alert('Данные отправлены.');
 		},
 		error:  function(xhr, str){
+			$('#formForSend')[0].reset();
 			var err = ('Ошибка '+ xhr.status +': ');
 			if (xhr.status == 404) {
 				//alert(xhr.responseCode + ' ' + str);

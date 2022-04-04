@@ -9,8 +9,7 @@ function call() {
 			//$('#results').html(data);
 			alert('Данные отправлены.');
 		},
-		error:  function(xhr, str){
-			$('#formForSend')[0].reset();
+		error:  function(xhr, str){			
 			var err = ('Ошибка '+ xhr.status +': ');
 			if (xhr.status == 404) {
 				//alert(xhr.responseCode + ' ' + str);
@@ -22,6 +21,5 @@ function call() {
 			}			
 		}
 	});
+	$('#formForSend')[0].reset();
 }
-	
-	
